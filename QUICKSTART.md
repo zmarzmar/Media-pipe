@@ -81,12 +81,20 @@ You need two PNG images named:
 
 ### 5. Run the Application
 
-**Windows - Option A (easiest):**
-```bash
+**Windows - Option A (easiest - double-click):**
+- Simply double-click `run.bat` in File Explorer
+
+**Windows - Option B (PowerShell):**
+```powershell
+.\run.bat
+```
+
+**Windows - Option C (Command Prompt):**
+```cmd
 run.bat
 ```
 
-**Windows - Option B:**
+**Windows - Option D (Direct Python):**
 ```bash
 python3.11 main.py
 ```

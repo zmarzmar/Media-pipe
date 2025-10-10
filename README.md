@@ -71,12 +71,20 @@ Perfect for learning about:
 
 ### Windows:
 
-**Option 1: Run with batch file (easiest):**
-```bash
+**Option 1: Double-click the batch file (easiest):**
+- Simply double-click `run.bat` in File Explorer
+
+**Option 2: Run from PowerShell:**
+```powershell
+.\run.bat
+```
+
+**Option 3: Run from Command Prompt (cmd):**
+```cmd
 run.bat
 ```
 
-**Option 2: Run directly with Python:**
+**Option 4: Run directly with Python:**
 ```bash
 python3.11 main.py
 ```
@@ -152,7 +160,9 @@ python3.11 -m pip install -r requirements.txt
 # Add your meme images (apple.png and appletongue.png)
 
 # Run the app
-# Windows: run.bat
+# Windows (PowerShell): .\run.bat
+# Windows (Command Prompt): run.bat
+# Windows (Double-click): Just double-click run.bat
 # macOS/Linux: ./run.sh
 ```
 
