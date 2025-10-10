@@ -105,13 +105,13 @@ def main():
     
     # Check if required image files exist
     if not os.path.exists('apple.png'):
-        print("\n❌ ERROR: apple.png not found!")
+        print("\n[ERROR] apple.png not found!")
         print("Please add this image to the project directory.")
         print("This image is displayed when tongue is NOT out.")
         return
     
     if not os.path.exists('appletongue.png'):
-        print("\n❌ ERROR: appletongue.png not found!")
+        print("\n[ERROR] appletongue.png not found!")
         print("Please add this image to the project directory.")
         print("This image is displayed when tongue IS out.")
         return
@@ -122,11 +122,11 @@ def main():
     
     # Verify images loaded successfully
     if apple_img is None or appletongue_img is None:
-        print("\n❌ ERROR: Could not load meme images.")
+        print("\n[ERROR] Could not load meme images.")
         print("Please check that the files are valid PNG images.")
         return
     
-    print("✅ Meme images loaded successfully!")
+    print("[OK] Meme images loaded successfully!")
     
     # Resize images to fit the output window
     # This ensures consistent display regardless of original image size
@@ -142,7 +142,7 @@ def main():
     cap = cv2.VideoCapture(0)
     
     if not cap.isOpened():
-        print("\n❌ ERROR: Could not open webcam.")
+        print("\n[ERROR] Could not open webcam.")
         print("Please check:")
         print("  - Webcam is connected")
         print("  - No other application is using the webcam")
@@ -153,7 +153,7 @@ def main():
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, WINDOW_WIDTH)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, WINDOW_HEIGHT)
     
-    print("✅ Webcam initialized successfully!")
+    print("[OK] Webcam initialized successfully!")
     
     # ========================================================================
     # STEP 3: Create display windows
@@ -168,11 +168,11 @@ def main():
     cv2.resizeWindow('Meme Output', WINDOW_WIDTH, WINDOW_HEIGHT)
     
     print("\n" + "=" * 60)
-    print("✅ Application started successfully!")
+    print("[OK] Application started successfully!")
     print("=" * 60)
-    print("\n📷 Camera windows opened")
-    print("👅 Stick your tongue out to change the meme!")
-    print("⌨️  Press 'q' to quit\n")
+    print("\n[CAMERA] Windows opened")
+    print("[TONGUE] Stick your tongue out to change the meme!")
+    print("[QUIT] Press 'q' to quit\n")
     
     # Default state - start with normal apple image
     current_meme = apple_img.copy()
@@ -187,7 +187,7 @@ def main():
         
         # Check if frame was captured successfully
         if not ret:
-            print("\n❌ ERROR: Could not read frame from webcam.")
+            print("\n[ERROR] Could not read frame from webcam.")
             break
         
         # Flip frame horizontally for mirror effect (makes it easier to use)
@@ -252,7 +252,7 @@ def main():
         # Wait 1ms for key press, check if 'q' was pressed
         # The & 0xFF is needed for compatibility with some systems
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            print("\n👋 Quitting application...")
+            print("\n[QUIT] Quitting application...")
             break
     
     # ========================================================================
@@ -268,7 +268,7 @@ def main():
     # Close MediaPipe Face Mesh
     face_mesh.close()
     
-    print("✅ Application closed successfully.")
+    print("[OK] Application closed successfully.")
     print("Thanks for using Tongue Detection Meme Display!\n")
 
 if __name__ == "__main__":
