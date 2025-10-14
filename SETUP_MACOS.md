@@ -10,11 +10,9 @@ Complete guide for setting up the Tongue Detection Meme Display on macOS.
 - **RAM:** 4GB minimum, 8GB recommended
 - **Disk Space:** ~500MB for dependencies
 
-## Installation Methods
+## Installation
 
 ### Method 1: Using Homebrew (Recommended)
-
-Homebrew makes Python installation easy on macOS.
 
 #### Step 1: Install Homebrew (if not already installed)
 
@@ -179,21 +177,19 @@ python3.11 -m pip install mediapipe
 
 ### Issue 4: Camera Not Working
 
-**Checklist:**
-- [ ] Camera permissions granted (see Camera Permissions section above)
-- [ ] No other app is using the camera (close Zoom, FaceTime, Photo Booth)
-- [ ] Camera works in other apps (test with Photo Booth)
-- [ ] Try restarting Terminal
+Checklist:
+- Camera permissions granted (see Camera Permissions section above)
+- No other app is using the camera (close Zoom, FaceTime, Photo Booth)
+- Camera works in other apps (test with Photo Booth)
+- Try restarting Terminal
 
-**Try different camera index:**
-Edit `main.py`, line ~142:
+Try different camera index by editing `main.py`, line ~142:
 ```python
 cap = cv2.VideoCapture(0)  # Change 0 to 1
 ```
 
 ### Issue 5: Window Doesn't Appear
 
-**Solution:**
 macOS may place windows on a different desktop/space.
 
 1. Look at Mission Control (swipe up with 3-4 fingers or press F3)
@@ -202,7 +198,6 @@ macOS may place windows on a different desktop/space.
 
 ### Issue 6: "SSL: CERTIFICATE_VERIFY_FAILED" During Install
 
-**Solution:**
 ```bash
 # For Homebrew Python
 /Applications/Python\ 3.11/Install\ Certificates.command
@@ -213,7 +208,6 @@ python3.11 -m pip install --upgrade certifi
 
 ### Issue 7: NumPy Compatibility Warning
 
-**Solution:**
 This is usually just a warning and won't affect functionality. To fix:
 ```bash
 python3.11 -m pip install numpy --upgrade
@@ -221,15 +215,15 @@ python3.11 -m pip install numpy --upgrade
 
 ## Performance Tips for macOS
 
-### For Better Performance:
+For better performance:
 
-1. **Close other apps** using the camera or CPU
-2. **Reduce window size** - edit `main.py`:
+1. Close other apps using the camera or CPU
+2. Reduce window size - edit `main.py`:
    ```python
    WINDOW_WIDTH = 640
    WINDOW_HEIGHT = 480
    ```
-3. **Lower MediaPipe complexity** - edit `main.py`:
+3. Lower MediaPipe complexity - edit `main.py`:
    ```python
    face_mesh = mp_face_mesh.FaceMesh(
        model_complexity=0,  # 0=fastest
@@ -238,7 +232,7 @@ python3.11 -m pip install numpy --upgrade
    )
    ```
 
-### For MacBook Users:
+For MacBook users:
 
 - Plug in power adapter (app may throttle on battery)
 - Close browser tabs and other apps
@@ -286,9 +280,7 @@ If you're still stuck:
 5. Check pip version: `python3.11 -m pip --version`
 6. List installed packages: `python3.11 -m pip list`
 
-## Terminal Shortcuts
-
-Useful Terminal commands:
+## Useful Terminal Commands
 
 ```bash
 # Navigate to project
@@ -310,12 +302,12 @@ system_profiler SPCameraDataType
 ## macOS Versions
 
 Tested on:
-- ✅ macOS Sonoma (14.x)
-- ✅ macOS Ventura (13.x)
-- ✅ macOS Monterey (12.x)
-- ✅ macOS Big Sur (11.x)
-- ✅ macOS Catalina (10.15)
-- ⚠️ macOS Mojave (10.14) - should work but not extensively tested
+- macOS Sonoma (14.x)
+- macOS Ventura (13.x)
+- macOS Monterey (12.x)
+- macOS Big Sur (11.x)
+- macOS Catalina (10.15)
+- macOS Mojave (10.14) - should work but not extensively tested
 
 ## Next Steps
 
@@ -326,5 +318,5 @@ Once everything is working:
 3. Customize the detection threshold
 4. Add new features!
 
-Happy coding on macOS! 🍎👅
+Happy coding on macOS!
 

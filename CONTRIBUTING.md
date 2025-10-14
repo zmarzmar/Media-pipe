@@ -1,18 +1,18 @@
 # Contributing Guide
 
-Thank you for your interest in contributing to the Tongue Detection Meme Display project! This guide will help you get started.
+Thanks for your interest in contributing! This guide will help you get started.
 
 ## How to Contribute
 
 ### 1. Types of Contributions We Welcome
 
-- 🐛 **Bug fixes** - Fix issues or improve stability
-- ✨ **New features** - Add new detection types (smiles, winks, etc.)
-- 📚 **Documentation** - Improve guides, add examples, fix typos
-- 🎨 **UI/UX improvements** - Better visual feedback, cleaner interface
-- ⚡ **Performance optimizations** - Speed improvements, resource efficiency
-- 🧪 **Testing** - Add tests, improve reliability
-- 🌍 **Platform support** - Improve Windows/macOS/Linux compatibility
+- **Bug fixes** - Fix issues or improve stability
+- **New features** - Add new detection types (smiles, winks, etc.)
+- **Documentation** - Improve guides, add examples, fix typos
+- **UI/UX improvements** - Better visual feedback, cleaner interface
+- **Performance optimizations** - Speed improvements, resource efficiency
+- **Testing** - Add tests, improve reliability
+- **Platform support** - Improve Windows/macOS/Linux compatibility
 
 ### 2. Getting Started
 
@@ -62,14 +62,14 @@ Thank you for your interest in contributing to the Tongue Detection Meme Display
 - **Documentation:** Update README/docs if you change functionality
 - **Commit messages:** Be descriptive
 
-**Good commit messages:**
+Good commit messages:
 ```bash
 git commit -m "Add smile detection feature"
 git commit -m "Fix webcam initialization on Linux"
 git commit -m "Update macOS setup instructions"
 ```
 
-**Bad commit messages:**
+Bad commit messages:
 ```bash
 git commit -m "fix"
 git commit -m "update"
@@ -83,7 +83,7 @@ git commit -m "changes"
 - Use meaningful variable names
 - Follow existing code structure
 
-**Example of good code:**
+Example of good code:
 ```python
 def detect_smile(face_landmarks):
     """
@@ -107,41 +107,41 @@ def detect_smile(face_landmarks):
 
 Before submitting:
 
-1. **Test on your platform**
+1. Test on your platform
    ```bash
    python3.11 main.py
    ```
 
-2. **Check for errors**
+2. Check for errors
    - No Python errors/exceptions
    - Webcam works properly
    - Detection functions as expected
 
-3. **Test edge cases**
+3. Test edge cases
    - No face in frame
    - Multiple faces (if applicable)
    - Poor lighting conditions
    - Different camera angles
 
-4. **Cross-platform testing** (if possible)
+4. Cross-platform testing (if possible)
    - Windows
    - macOS
    - Linux
 
 ### 5. Submitting Changes
 
-1. **Commit your changes**
+1. Commit your changes
    ```bash
    git add .
    git commit -m "Descriptive commit message"
    ```
 
-2. **Push to your fork**
+2. Push to your fork
    ```bash
    git push origin feature/your-feature-name
    ```
 
-3. **Create a Pull Request**
+3. Create a Pull Request
    - Go to GitHub
    - Click "New Pull Request"
    - Select your branch
@@ -150,16 +150,16 @@ Before submitting:
 
 ### 6. Pull Request Guidelines
 
-**Your PR should include:**
+Your PR should include:
 
-- ✅ Clear description of what changed
-- ✅ Why the change was needed
-- ✅ How to test the change
-- ✅ Screenshots/videos (if UI changes)
-- ✅ Updated documentation (if needed)
-- ✅ No breaking changes (or clearly noted)
+- Clear description of what changed
+- Why the change was needed
+- How to test the change
+- Screenshots/videos (if UI changes)
+- Updated documentation (if needed)
+- No breaking changes (or clearly noted)
 
-**PR Description Template:**
+PR Description Template:
 ```markdown
 ## Description
 Brief description of changes
@@ -214,11 +214,10 @@ Want to contribute but don't know where to start? Try these:
 
 ## Code Review Process
 
-1. **Maintainer reviews** your PR
-2. **Feedback** may be requested
-3. **Make changes** if needed
-4. **Approval** and merge
-5. **Celebration!** 🎉
+1. Maintainer reviews your PR
+2. Feedback may be requested
+3. Make changes if needed
+4. Approval and merge
 
 ## Reporting Bugs
 
@@ -236,7 +235,7 @@ Found a bug? Please open an issue with:
 4. **Screenshots/videos** if applicable
 5. **Error messages** (full traceback)
 
-**Bug Report Template:**
+Bug Report Template:
 ```markdown
 ## Bug Description
 Clear description of the bug
@@ -271,7 +270,7 @@ Any other relevant information
 
 Improving documentation is a great way to contribute!
 
-**Areas needing help:**
+Areas needing help:
 - Fixing typos and grammar
 - Adding more examples
 - Creating video tutorials
@@ -279,7 +278,7 @@ Improving documentation is a great way to contribute!
 - Platform-specific guides
 - FAQ section
 
-**How to contribute docs:**
+How to contribute docs:
 1. Edit the `.md` file
 2. Preview your changes
 3. Submit PR with clear description
@@ -290,7 +289,7 @@ Improving documentation is a great way to contribute!
 - Help others learn
 - Give constructive feedback
 - Celebrate successes
-- Have fun! 😄
+- Have fun
 
 ## Questions?
 
@@ -304,15 +303,14 @@ Improving documentation is a great way to contribute!
 All contributors will be:
 - Added to contributors list
 - Credited in release notes
-- Appreciated forever! 🌟
+- Appreciated!
 
-Thank you for contributing! 🙏
+Thank you for contributing!
 
 ---
 
-**Ready to contribute?**
+Ready to contribute?
 1. Fork the repo
 2. Make your changes
 3. Submit a PR
-4. Celebrate! 🎉
 

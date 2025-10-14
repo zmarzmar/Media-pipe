@@ -3,8 +3,7 @@ Tongue Detection Meme Display
 A MediaPipe + OpenCV application that detects when your tongue is out
 and displays different meme images accordingly.
 
-Author: Your Name
-Tutorial: See TUTORIAL.md for detailed explanations
+See TUTORIAL.md for detailed explanations
 """
 
 import cv2

@@ -308,27 +308,27 @@ This helps you find the right threshold value for your setup.
 ## What's Next?
 
 Try building these advanced features:
-1. **Multiple gesture combinations**: Detect "tongue out + winking"
-2. **Gesture sequences**: Detect a series of gestures in order
-3. **Face filters**: Add snapchat-style filters to your face
-4. **Background replacement**: Replace your background with images
-5. **Multiplayer mode**: Detect multiple faces and track each person
+1. Multiple gesture combinations: Detect "tongue out + winking"
+2. Gesture sequences: Detect a series of gestures in order
+3. Face filters: Add snapchat-style filters to your face
+4. Background replacement: Replace your background with images
+5. Multiplayer mode: Detect multiple faces and track each person
 
 ## Platform-Specific Notes
 
-### Windows
+**Windows:**
 - Use `run.bat` to launch the app quickly
 - Python command may be `python` instead of `python3.11`
 - Camera permissions: Settings → Privacy → Camera
 
-### macOS
+**macOS:**
 - Use `./run.sh` to launch (after `chmod +x run.sh`)
 - You'll need to grant Terminal camera permissions
 - System Preferences → Security & Privacy → Camera
 - If opencv fails to install, you may need: `brew install cmake`
 - Python command is usually `python3` or `python3.11`
 
-### Linux
+**Linux:**
 - Use `./run.sh` to launch (after `chmod +x run.sh`)
 - Ensure user is in video group: `sudo usermod -a -G video $USER`
 - Camera device usually at `/dev/video0`
@@ -349,5 +349,5 @@ If you get stuck:
 4. Draw landmarks on screen to visualize
 5. Check platform-specific notes above
 
-Happy coding! 🎉
+Happy coding!
 

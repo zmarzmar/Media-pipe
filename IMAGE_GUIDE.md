@@ -13,17 +13,17 @@ Both images will automatically be resized to **960x720 pixels**, so any size wor
 
 ## Where to Find Images
 
-### Option 1: Emoji Images (Easiest!)
+### Option 1: Emoji Images
 
-Perfect for beginners. Find large emoji PNG files:
+Find large emoji PNG files:
 
-**Websites:**
+Websites:
 - [Emojipedia](https://emojipedia.org/) - Click any emoji → Download PNG
 - [Emoji.gg](https://emoji.gg/) - Large collection of emoji PNGs
 - [Flaticon](https://www.flaticon.com/) - Free emoji and icon PNGs
 - Google Images - Search "apple emoji png transparent"
 
-**Suggested combos:**
+Suggested combos:
 - 🍎 Apple + 😛 Face with Tongue
 - 😊 Happy Face + 🤪 Zany Face
 - 🐶 Dog + 🥴 Woozy Face
@@ -34,12 +34,12 @@ Perfect for beginners. Find large emoji PNG files:
 
 Use popular meme formats:
 
-**Good sources:**
+Good sources:
 - [Imgflip Meme Generator](https://imgflip.com/memetemplates) - Download blank templates
 - [Know Your Meme](https://knowyourmeme.com/) - Browse and download memes
 - Reddit (r/memes, r/dankmemes) - Save images (respect copyright!)
 
-**Suggested meme pairs:**
+Suggested meme pairs:
 - Drake Disapproving / Drake Approving
 - Distracted Boyfriend (normal) / Distracted Boyfriend (exaggerated)
 - This is Fine Dog (calm) / This is Fine Dog (fire)
@@ -47,20 +47,20 @@ Use popular meme formats:
 
 ### Option 3: Create Your Own
 
-**Using Paint/Paint 3D (Windows):**
+Using Paint/Paint 3D (Windows):
 1. Open Paint
 2. Create a simple drawing or add text
 3. Save as PNG
 4. Create a second "silly" version
 
-**Using Canva (Free online):**
+Using Canva (free online):
 1. Go to [Canva.com](https://www.canva.com/)
 2. Create a new design (960x720)
 3. Add text, shapes, or images
 4. Download as PNG
 5. Create a matching "tongue out" version
 
-**Using GIMP (Free software):**
+Using GIMP (free software):
 1. Download [GIMP](https://www.gimp.org/)
 2. Create a 960x720 canvas
 3. Design your images
@@ -70,31 +70,31 @@ Use popular meme formats:
 
 Make it personal!
 
-**Ideas:**
+Ideas:
 - Your pet looking normal + Your pet being silly
 - A serious selfie + A funny face selfie
 - Your favorite food + Same food with ketchup/sauce
 - Before coffee / After coffee
 
-**How to prepare photos:**
+How to prepare photos:
 1. Take/find two photos (similar but different energy)
 2. Crop to similar sizes
 3. Save as PNG format
 
 ## Image Requirements
 
-### ✅ Must Have:
+### Must Have:
 - File format: **PNG** (.png extension)
 - File names: **exactly** `apple.png` and `appletongue.png` (lowercase)
 - Location: Same folder as `main.py`
 
-### 📋 Recommended:
+### Recommended:
 - High contrast images (easier to see)
-- Bright colors (more fun!)
+- Bright colors (more fun)
 - Similar themes (creates a good before/after effect)
 - Square or landscape orientation (looks better when resized)
 
-### ❌ Avoid:
+### Avoid:
 - Very dark images (hard to see)
 - Tiny images (will look pixelated when enlarged)
 - Corrupted files (won't load)
@@ -191,35 +191,35 @@ Once you have it working, try these fun combinations:
 
 If you're sharing your project:
 
-- ✅ **OK to use:**
-  - Your own photos/drawings
-  - Public domain images
-  - Creative Commons (CC0) images
-  - Emoji (generally okay for personal/educational use)
+**OK to use:**
+- Your own photos/drawings
+- Public domain images
+- Creative Commons (CC0) images
+- Emoji (generally okay for personal/educational use)
 
-- ⚠️ **Ask permission or use differently:**
-  - Copyrighted memes (better to create your own)
-  - Celebrity photos
-  - Brand logos
-  - Professional photography
+**Ask permission or use differently:**
+- Copyrighted memes (better to create your own)
+- Celebrity photos
+- Brand logos
+- Professional photography
 
-**Safe sources for free images:**
+Safe sources for free images:
 - [Unsplash](https://unsplash.com/) - Free high-quality photos
 - [Pexels](https://www.pexels.com/) - Free stock photos
 - [Pixabay](https://pixabay.com/) - Free images and illustrations
 
 ## Need Help?
 
-**Images not showing?**
+Images not showing?
 1. Check `main.py` output for error messages
 2. Verify filenames are exactly `apple.png` and `appletongue.png`
 3. Make sure files are in the correct directory
 4. Try with simple emoji images first
 
-**Want different behavior?**
+Want different behavior?
 - Edit `main.py` to change image names
 - Add more images for different gestures (see TUTORIAL.md)
 - Create a slideshow that cycles through images
 
-Have fun creating! 🎨
+Have fun creating!
 

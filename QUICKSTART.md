@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-Get up and running in 5 minutes! 🚀
+Get up and running in 5 minutes.
 
 ## Prerequisites
 
@@ -9,7 +9,7 @@ Get up and running in 5 minutes! 🚀
 - **Webcam** (built-in or USB)
 - **Two meme images** (see step 4)
 
-## Step-by-Step Setup
+## Setup
 
 ### 1. Download the Project
 
@@ -34,11 +34,10 @@ python3 --version
 
 You should see: `Python 3.11.x`
 
-**Don't have Python 3.11?**
-- **Windows/macOS:** Download from [python.org](https://www.python.org/downloads/)
-- **macOS (with Homebrew):** `brew install python@3.11`
-- **Linux (Ubuntu/Debian):** `sudo apt install python3.11`
-- **Linux (Fedora):** `sudo dnf install python3.11`
+Don't have Python 3.11? Download from [python.org](https://www.python.org/downloads/)
+- macOS with Homebrew: `brew install python@3.11`
+- Linux (Ubuntu/Debian): `sudo apt install python3.11`
+- Linux (Fedora): `sudo dnf install python3.11`
 
 ### 3. Install Dependencies
 
@@ -59,9 +58,8 @@ This will install:
 - OpenCV (camera and image processing)
 - NumPy (numerical operations)
 
-**Note for macOS users:** You may need to install additional dependencies:
+Note for macOS users: You may need to install cmake if you get errors:
 ```bash
-# If you get errors, try:
 brew install cmake
 ```
 
@@ -71,57 +69,46 @@ You need two PNG images named:
 - `apple.png` - Shown when tongue is NOT out
 - `appletongue.png` - Shown when tongue IS out
 
-**Where to find images:**
+Where to find images:
 - Google Images (search for "apple emoji png", "tongue emoji png")
 - Emoji websites (emojipedia.org)
 - Create your own in Paint/Photoshop
 - Use any fun before/after images
 
-**Important:** Place both PNG files in the same directory as `main.py`
+Place both PNG files in the same directory as `main.py`
 
 ### 5. Run the Application
 
-**Windows - Option A (easiest - double-click):**
-- Simply double-click `run.bat` in File Explorer
-
-**Windows - Option B (PowerShell):**
+**Windows:**
+- Double-click `run.bat` in File Explorer, or:
 ```powershell
 .\run.bat
 ```
-
-**Windows - Option C (Command Prompt):**
-```cmd
-run.bat
-```
-
-**Windows - Option D (Direct Python):**
+Or run directly:
 ```bash
 python3.11 main.py
 ```
 
-**macOS/Linux - Option A (easiest):**
+**macOS/Linux:**
 ```bash
 chmod +x run.sh  # Only needed the first time
 ./run.sh
 ```
-
-**macOS/Linux - Option B:**
+Or run directly:
 ```bash
 python3.11 main.py
-# or
-python3 main.py
 ```
 
-### 6. Use the App!
+### 6. Use the App
 
 Two windows will open:
 1. **Camera Input** - Shows your face with detection status
 2. **Meme Output** - Shows the meme that changes when you stick your tongue out
 
-**Controls:**
+Controls:
 - Stick your tongue out → meme changes to `appletongue.png`
 - Close your mouth → meme changes back to `apple.png`
-- Press 'q' → quit the application
+- Press 'q' → quit
 
 ## Troubleshooting
 
@@ -151,24 +138,24 @@ python3 -m pip install -r requirements.txt
 python3 main.py
 ```
 
-**Note:** Make sure it's Python 3.11, not 3.13 or other versions!
+Note: Make sure it's Python 3.11, not 3.13 or other versions.
 
 ### "Could not open webcam"
 
-**All platforms:**
+All platforms:
 1. Close any other apps using the webcam (Zoom, Teams, Skype, etc.)
 2. Try unplugging and replugging your USB webcam (if external)
 
-**Windows:**
+Windows:
 - Check webcam permissions: Settings → Privacy → Camera
 - Allow desktop apps to access camera
 
-**macOS:**
+macOS:
 - Check permissions: System Preferences → Security & Privacy → Camera
 - Allow Terminal or your IDE to access the camera
 - You may need to restart Terminal after granting permission
 
-**Linux:**
+Linux:
 - Check if your user is in the video group: `groups $USER`
 - If not, add yourself: `sudo usermod -a -G video $USER` (then log out and back in)
 - Check camera device: `ls /dev/video*`
@@ -193,7 +180,7 @@ TONGUE_OUT_THRESHOLD = 0.03  # Change this value
 
 ## What's Next?
 
-✅ Got it working? Great! Now try:
+Got it working? Great! Now try:
 
 1. **Experiment with different images** - Try funny faces, pets, memes
 2. **Adjust the threshold** - Find the perfect sensitivity for you
@@ -208,19 +195,19 @@ TONGUE_OUT_THRESHOLD = 0.03  # Change this value
 
 ## Tips for Best Results
 
-🎯 **Position yourself well:**
+**Position yourself well:**
 - Face the camera directly
 - Ensure good lighting
 - Stay 1-2 feet from the camera
 
-🎯 **For better detection:**
+**For better detection:**
 - Open your mouth wider when sticking tongue out
 - Make exaggerated expressions
 - Avoid backlighting (light behind you)
 
-🎯 **Performance tips:**
+**Performance tips:**
 - Close other camera applications
 - Run on a decent computer (webcam processing requires CPU)
 
-Have fun! 😄👅
+Have fun!
 

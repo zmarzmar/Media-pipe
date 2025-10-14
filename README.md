@@ -1,28 +1,28 @@
-# 👅 Tongue Detection Meme Display
+# Tongue Detection Meme Display
 
-A fun Python application using MediaPipe and OpenCV that detects when your tongue is out and displays different meme images in real-time!
+A fun Python application using MediaPipe and OpenCV that detects when your tongue is out and displays different meme images in real-time.
 
 **GitHub:** [https://github.com/aaronhubhachen/simple-mediapipe-project](https://github.com/aaronhubhachen/simple-mediapipe-project)
 
-Perfect for learning about:
+Good for learning about:
 - MediaPipe Face Mesh detection
 - Real-time video processing with OpenCV
 - Facial landmark analysis
 - Computer vision basics
 
-**🚀 New to this project?** Start with the [Quick Start Guide](QUICKSTART.md) to get running in 5 minutes!
+New to this project? Start with the [Quick Start Guide](QUICKSTART.md) to get running in 5 minutes.
 
-**📚 Want to understand how it works?** Check out the [Tutorial](TUTORIAL.md) for detailed explanations!
+Want to understand how it works? Check out the [Tutorial](TUTORIAL.md) for detailed explanations.
 
-**🍎 macOS user?** See the [macOS Setup Guide](SETUP_MACOS.md) for platform-specific instructions!
+macOS user? See the [macOS Setup Guide](SETUP_MACOS.md) for platform-specific instructions.
 
 ## Features
 
-- 🎥 Real-time webcam face detection using MediaPipe Face Mesh
-- 👅 Tongue-out detection algorithm
-- 🖼️ Dual window display: Camera input and Meme output
-- 📺 Large window sizes (960x720) for clear visibility
-- 🔄 Real-time switching between normal and tongue-out meme images
+- Real-time webcam face detection using MediaPipe Face Mesh
+- Tongue-out detection algorithm
+- Dual window display: Camera input and Meme output
+- Large window sizes (960x720) for clear visibility
+- Real-time switching between normal and tongue-out meme images
 
 ## Requirements
 
@@ -201,7 +201,7 @@ simple-mediapipe-project/
 - `opencv-python==4.8.1.78` - Video capture and display
 - `numpy==1.24.3` - Numerical operations
 
-## Customization Ideas 🎨
+## Customization Ideas
 
 Want to make this project your own? Try these modifications:
 
@@ -230,17 +230,11 @@ Want to make this project your own? Try these modifications:
 
 ## Contributing
 
-We welcome contributions! Whether you're fixing bugs, adding features, or improving documentation, your help is appreciated.
+Contributions are welcome! Check out the [Contributing Guide](CONTRIBUTING.md) for details on how to get started.
 
-**Want to contribute?** Check out our [Contributing Guide](CONTRIBUTING.md) for:
-- How to get started
-- Code style guidelines
-- Pull request process
-- Feature ideas for all skill levels
-
-Some quick ideas:
+Ideas for contributions:
 - Improve tongue detection algorithm
-- Add support for multiple faces (smile, wink, etc.)
+- Add support for multiple gestures (smile, wink, etc.)
 - Create a GUI for adjusting sensitivity
 - Add gesture recording/playback
 - Optimize performance
@@ -248,13 +242,13 @@ Some quick ideas:
 
 ## Platform Support
 
-This project is fully cross-platform:
+This project is cross-platform:
 
 | Platform | Status | Instructions |
 |----------|--------|--------------|
-| 🪟 Windows 10/11 | ✅ Fully Supported | Use `run.bat` or see [Quick Start](QUICKSTART.md) |
-| 🍎 macOS 10.14+ | ✅ Fully Supported | See [macOS Setup Guide](SETUP_MACOS.md) |
-| 🐧 Linux | ✅ Supported | Use `run.sh` or see [Quick Start](QUICKSTART.md) |
+| Windows 10/11 | Fully Supported | Use `run.bat` or see [Quick Start](QUICKSTART.md) |
+| macOS 10.14+ | Fully Supported | See [macOS Setup Guide](SETUP_MACOS.md) |
+| Linux | Supported | Use `run.sh` or see [Quick Start](QUICKSTART.md) |
 
 ## Credits
 
